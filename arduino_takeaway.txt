@@ -1,0 +1,17 @@
+1. line ends with ';'
+2. declare the variable at the beginning of the script.
+String command; //declare a String type variable called command
+3. comment line starts with '//'
+4. #define led LED_BUILTIN // this is a line define the pinout, led that called in the following
+script is referred to the built-in LED which is reserved word LED_BUILTIN
+5. void setup() {} //this is a loop setup routine runs once when press reset.
+6. void loop() {} // this is a loop routine runs over and over again once the board is powered up
+7. in the void setup(){ Serial.begin(9600) } //the line Serial.begin(9600) means that the
+communication baud rate is 9600
+8. void loop(){ int sensorValue = analogRead(A0) } // the line in the loop read the analog pin
+A0, and assign the value to varible sensorValue, which is a integer type variable
+9. Serial.println(sensorValue) // print the variable sensorValue in the 
+serial monitor, serial monitor window could be opened from the tools 
+dropdown menu
+10. delay(1000) // line at the end of the void loop(){} delays the next
+loop by 1000 millisecond, or 1 second
